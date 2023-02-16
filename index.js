@@ -14,9 +14,14 @@ app.use(cors())
 const Registerrouter=require('./Router/Registerrouter')
 const Itemrouter=require('./Router/Itemrouter')
 const Authmodule=require('./Modules/Authmodule')
+const Striperouter=require('./Router/Striperouter')
+app.use('/stripe',Striperouter)
+
 app.use('/register',Registerrouter)
 app.use('/',Authmodule.authenticate)
 app.use('/item',Itemrouter)
+
+
 
 
 
