@@ -9,7 +9,7 @@ const ordermodel=mongoose.Schema({
         type:String
     },
     paymentIntentId:{
-        type:String,
+        type:String,unique:true
     },
     item:{
         type:mongoose.Schema.Types.ObjectId,

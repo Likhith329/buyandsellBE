@@ -7,7 +7,7 @@ const itemmodel=mongoose.Schema({
     },
     description:{
         type:String,
-        required:true,unique:true
+        required:true
     },
     price:{
         type:String,

@@ -20,6 +20,11 @@ app.use('/stripe',Striperouter)
 app.use('/register',Registerrouter)
 app.use('/',Authmodule.authenticate)
 app.use('/item',Itemrouter)
+const Userrouter=require('./Router/Userrouter')
+app.use('/users',Userrouter)
+
+const Orderrouter=require('./Router/Orderrouter')
+app.use('/orders',Orderrouter)
 
 
 
