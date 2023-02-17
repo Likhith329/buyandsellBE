@@ -60,8 +60,8 @@ console.log('working')
         },
       ],
       mode: 'payment',
-      success_url: 'http://localhost:3000/home/checkout-success',
-      cancel_url: 'http://localhost:3000/home',
+      success_url: 'https://buyandsellapp.netlify.app/home/checkout-success',
+      cancel_url: 'https://buyandsellapp.netlify.app/home',
     });
   
     res.send({url:session.url});
